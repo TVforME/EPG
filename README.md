@@ -3,9 +3,12 @@ EPG system written in Go using SQLite and REST backend.
 
 This is not a completed project and partically implemented for testing a EPG with the repeater project.  
 
-More to be done here to be a working EPG system. Welcome for any assistance here.
+More to be done here to be a working EPG system. Welcome for any assistance here. 
+Once 12 hours of events are created, a EIT file is xml is generated and injectes into the DVB transport stream using TSduck eitinject plugin.
 
-Each of the ratings systems uses a country identifier (au) here for the rating graghics files.
+[https://github.com/tsduck/tsduck/tree/master/src/tsplugins](https://github.com/tsduck/tsduck/blob/master/src/tsplugins/tsplugin_eitinject.cpp)
+
+Each of the ratings systems uses a country identifier (au) here for the rating icon files.
 
 Below is the file structure:
 ```
