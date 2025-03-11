@@ -1,0 +1,4 @@
+Title,StartMinute,CategoryID,GenreLevel1,GenreLevel2,RatingValueID
+Event 1,0,1,1,1,1
+Event 2,15,1,1,1,1
+Event 3,30,1,1,1,1

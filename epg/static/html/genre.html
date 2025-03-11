@@ -1,0 +1,26 @@
+<!-- genres.html -->
+{{ define "Content" }}
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align: center;">Genre ID</th>
+                <th style="text-align: center;">Description</th>
+                <th style="text-align: center;">Nibble Levels</th>
+                <th style="text-align: center;">Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Genres }}
+            <tr>
+                <td style="text-align: center;">{{ .GenreID }}</td>
+                <td style="text-align: center;"><strong>{{ .Description }}</strong></td>
+                <td style="text-align: center;">{{ .NibbleLevel1 }}|{{ .NibbleLevel2 }}</td>
+                <td style="text-align: center;">
+                    <span style="display: inline-block; width: 20px; height: 20px; background-color: {{ .ColorHex }};"></span> {{ .ColorHex }}
+                </td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+{{ end }}
+

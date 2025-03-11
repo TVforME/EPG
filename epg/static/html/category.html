@@ -1,0 +1,19 @@
+<!-- category.html -->
+{{ define "Content" }}
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align: center; width: 10%;">Category ID</th>
+                <th style="text-align: center; width: 90%;">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Category }}
+            <tr>
+                <td style="width: 10%; text-align: center;">{{ .CategoryID }}</td>
+                <td style="width: 90%; text-align: center;"><strong>{{ .Description }}</strong></td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+{{ end }}

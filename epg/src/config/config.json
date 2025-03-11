@@ -1,0 +1,42 @@
+{
+	"dbtype": "sqlite3",
+	"dbname": "epg.db",
+	"bindport": 8080,
+	"load_balance": false,
+	"network": [
+	  {
+		"service_id": 1,
+		"description": "VK3ATL GARC",
+		"start_time": "2022-01-01T08:00:00Z",
+		"finish_time": "2022-01-01T18:00:00Z",
+		"country_code": "AU",
+		"timezone_name": "Australia/Sydney",
+		"crid_description": "0x1645564"
+	  }
+	],
+	"channels": [
+	  {
+		"description": "VK3RGL HD-1",
+		"broadcast_start_time": "2022-01-01T09:00:00Z",
+		"broadcast_finish_time": "2022-01-01T17:00:00Z",
+		"service_id": 1000,
+		"service_vpid": 256,
+		"service_apid": 356,
+		"authority_meta": "crid://vk3atl.org/repeaters-beacons/service1",
+		"logo_name": "vk3rgl-hd1-50x50.png",
+		"network_id": 1
+	  },
+	  {
+		"description": "VK3RGL HD-2",
+		"broadcast_start_time": "2022-01-01T10:00:00Z",
+		"broadcast_finish_time": "2022-01-01T18:00:00Z",
+		"service_id": 1001,
+		"service_vpid": 257,
+		"service_apid": 357,
+		"authority_meta": "crid://vk3atl.org/repeaters-beacons/service2",
+		"logo_name": "vk3rgl-hd2-50x50.png",
+		"network_id": 1
+	  }
+	]
+  }
+  

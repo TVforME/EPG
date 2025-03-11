@@ -1,0 +1,133 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #444;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 2em;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #444;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+/* Basic Responsive Table Setup */
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+/* Adjust the width of the columns for small screens */
+@media only screen and (max-width: 768px) {
+    table {
+        font-size: 0.8em;
+    }
+}
+
+/* Adjust the width of the columns for medium screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    table {
+        font-size: 1em;
+    }
+}
+
+/* Adjust the width of the columns for large screens */
+@media only screen and (min-width: 1025px) {
+    table {
+        font-size: 1.2em;
+    }
+}

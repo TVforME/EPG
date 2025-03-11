@@ -1,0 +1,35 @@
+<!-- rating.html -->
+{{ define "Content" }}
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align: center;">Rating System ID</th>
+                <th style="text-align: center;">Country Code</th>
+                <th style="text-align: center;">Country Name</th>
+                <th style="text-align: center;">Description</th>
+                <th style="text-align: center;">Rating Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Ratings }}
+            <tr>
+                <td style="text-align: center;">{{ .RatingSystemID }}</td>
+                <td style="text-align: center;">{{ .Country.CountryCode }}</td>
+                <td style="text-align: center;">{{ .Country.CountryName }}</td>
+                <td style="text-align: center;">{{ .Description }}</td>
+                <td style="text-align: center;">
+                    <ul>
+                        {{ range .RatingValues }}
+                        <li>{{ .Value }} (Min Age: {{ .MinAge }})</li>
+                        {{ end }}
+                    </ul>
+                </td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+{{ end }}
+
+
+
+

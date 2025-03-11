@@ -1,0 +1,34 @@
+<!-- network.html -->
+{{ define "Content" }}
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 8%; text-align: center;">Network ID</th>
+                <th style="width: 10%; text-align: center;">Service Name</th>
+                <th style="width: 8%; text-align: center;">Service ID</th>
+                <th style="width: 12%; text-align: center;">CRID Description</th>
+                <th style="width: 10%; text-align: center;">Country</th>
+                <th style="width: 15%; text-align: center;">Start Time</th>
+                <th style="width: 15%; text-align: center;">Finish Time</th>
+                <th style="width: 30%; text-align: center;">Timezone</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Network }}
+            <tr>
+                <td style="width: 8%; text-align: center;">{{ .NetworkID }}</td>
+                <td style="width: 10%; text-align: center;"><strong>{{ .Description }}</strong></td>
+                <td style="width: 8%; text-align: center;">{{ .ServiceID }}</td>
+                <td style="width: 12%; text-align: center;">{{ .CridDescription }}</td>
+                <td style="width: 10%; text-align: center;">{{ .CountryName }}</td>
+                <td style="width: 15%; text-align: center;">{{ .StartTime.Format "2006-01-02 15:04:05" }}</td>
+                <td style="width: 15%; text-align: center;">{{ .FinishTime.Format "2006-01-02 15:04:05" }}</td>
+                <td style="width: 30%; text-align: center;">
+                    {{ .TimezoneName }} (Standard Offset: {{ .StandardOffset }}, DST Offset: {{ .DSTOffset }})
+                </td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+{{ end }}
+

@@ -1,0 +1,38 @@
+<!-- channel.html -->
+{{ define "Content" }}
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align: center;">Logo</th>
+                <th style="text-align: center; width: 20%;">Channel Name</th>
+                <th style="text-align: center; width: 10%;">Service ID</th>
+                <th style="text-align: center; width: 15%;">Service Video PID</th>
+                <th style="text-align: center; width: 15%;">Service Audio PID</th>
+                <th style="text-align: center; width: 20%;">Network Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Channels }}
+            <tr>
+                <td style="width: 10%; text-align: center;">
+                    <a href="{{ .AuthorityMeta }}">
+                        {{ if .LogoName }}
+                            <img src="/static/img/logos/{{ .LogoName }}" alt="Channel Logo">
+                        {{ else }}
+                            <img src="/static/img/logos/default-50x50.png" alt="Default Logo">
+                        {{ end }}
+                    </a>
+                </td>
+                <td style="width: 20%; text-align: center;"><a href="{{ .AuthorityMeta }}"><strong>{{ .Description }}</strong></a></td>
+                <td style="width: 10%; text-align: center;">{{ .ServiceID }}</td>
+                <td style="width: 15%; text-align: center;">{{ .ServiceVPid }}</td>
+                <td style="width: 15%; text-align: center;">{{ .ServiceAPid }}</td>
+                <td style="width: 20%; text-align: center;">{{ .NetworkName }}</td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+{{ end }}
+
+
+

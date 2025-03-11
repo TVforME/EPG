@@ -1,0 +1,21 @@
+rating_value_id,rating_system_id,value ,min_age ,description
+1,1,G,0,General Audiences
+2,1,PG,8,Parental Guidance
+3,1,PG-13,13,Parents Strongly Cautioned
+4,1,R,17,Restricted
+5,1,NC-17,18,No One 17 and Under Admitted
+6,2,G,0,General Audiences
+7,2,PG,8,Parental Guidance
+8,2,14A,14,Persons under 14 must be accompanied by an adult
+9,2,18A,18,Persons under 18 must be accompanied by an adult
+10,2,R,18,Restricted
+11,3,U,0,Universal
+12,3,PG,8,Parental Guidance
+13,3,12A,12,No one younger than 12 may see or buy a 12A film unless accompanied by an adult
+14,3,15,15,No one younger than 15 may see or buy a 15 film
+15,3,18,18,No one younger than 18 may see or buy an 18 film
+16,4,G,0,General Audiences
+17,4,PG,8,Parental Guidance
+18,4,M,15,Mature Audiences
+19,4,MA 15+,15,Mature Audiences 15+
+20,4,R 18+,18,Restricted 18+

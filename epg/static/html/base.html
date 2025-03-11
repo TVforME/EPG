@@ -1,0 +1,43 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/scripts.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>{{.Heading}}</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/network">Networks</a></li>
+                <li><a href="/channel">Channels</a></li>
+                <li><a href="/genre">Genres</a></li>
+                <li><a href="/category">Categories</a></li>
+                <li><a href="/rating">Ratings</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        {{ template "Content" . }}
+    </div>
+    <div class="footer">
+        <ul class="footer-links">
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="contact-info">
+            <p>Get in touch with us:</p>
+            <p>Phone: 0438409979</p>
+            <p>Email: <a href="mailto:webmaster@vk3atl.org">webmaster@vk3atl.org</a></p>
+        </div>
+        <p>&copy; 2025 VK3ATL</p>   
+    </div>
+</body>
+</html>
+
