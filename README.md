@@ -1,14 +1,28 @@
 # EPG
-EPG system written in Go using SQLite and REST backend.
+**EPG (Electronic Program Guide) system written in Go using SQLite and REST backend.
 
-This is not a completed project and partically implemented for testing a EPG with the repeater project.  
+This is not a complete project and is a prototype concept to use with the repeater project.  [DATV Repeater](https://github.com/TVforME/Repeater)
+I've since looked into CherryEPG as a subsitute however, I'll continual working on a GO version and support anyone whom has experience and is able to assist with this project.
 
-More to be done here to be a working EPG system. Welcome for any assistance here. 
-Once 12 hours of events are created, a XML file is prased and is injected into the DVB transport stream using TSduck eitinject plugin.
+*DB
+To create a new epg, simply delete the epg.db file in bin folder. On execution a new epg.db file is created using GORM migrate which uses the csv files to populate the tables.
+I used this method over static constants to keep the executable smaller in size and to provide flexibility for additions and changes. Some thought on how to package the csv files with the GO install.
+I'm yet to decide.
 
+*Ratings
+Each of the ratings systems uses a country identifier (au) here for the rating icon files.
+
+*CRID
+[CRID](https://en.wikipedia.org/wiki/Content_reference_identifier) (content reference identifier) 
+I'm yet to work out how modern TV's show the channel icon and current program in their EPG? I'm sure it able to be immplemented.
+
+*TODO
+Implement a query to fill the events table with a full 24 hours of events which is populated once a channel/s is associated to a network. If there is 2 channels to example then need to create 24 hours of events for each channel.
+Once events have been created then a query is run to generate a EIT.xml file containing the relavent tags which is injected into the DVB transport stream using TSduck eitinject plugin.
 [https://github.com/tsduck/tsduck/tree/master/src/tsplugins](https://github.com/tsduck/tsduck/blob/master/src/tsplugins/tsplugin_eitinject.cpp)
 
-Each of the ratings systems uses a country identifier (au) here for the rating icon files.
+
+*Program directory folder.
 
 Below is the file structure:
 ```
