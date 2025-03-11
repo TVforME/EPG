@@ -4,7 +4,7 @@ EPG system written in Go using SQLite and REST backend.
 This is not a completed project and partically implemented for testing a EPG with the repeater project.  
 
 More to be done here to be a working EPG system. Welcome for any assistance here. 
-Once 12 hours of events are created, a EIT file is xml is generated and injectes into the DVB transport stream using TSduck eitinject plugin.
+Once 12 hours of events are created, a XML file is prased and is injected into the DVB transport stream using TSduck eitinject plugin.
 
 [https://github.com/tsduck/tsduck/tree/master/src/tsplugins](https://github.com/tsduck/tsduck/blob/master/src/tsplugins/tsplugin_eitinject.cpp)
 
