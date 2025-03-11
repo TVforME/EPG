@@ -1,5 +1,5 @@
 # EPG
-**EPG (Electronic Program Guide) system written in Go using SQLite and REST backend.
+**EPG** (Electronic Program Guide) system written in Go using SQLite and REST backend.
 
 This is not a complete project and is a prototype concept to use with the repeater project.  [DATV Repeater](https://github.com/TVforME/Repeater)
 I've since looked into CherryEPG as a subsitute however, I'll continual working on a GO version and support anyone whom has experience and is able to assist with this project.
