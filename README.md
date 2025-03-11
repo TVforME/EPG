@@ -1,9 +1,13 @@
 # EPG
 EPG system written in Go using SQLite and REST backend.
 
-This is not a completed project and partically implemented with the required events table to be laoded and queried.
+This is not a completed project and partically implemented for testing a EPG with the repeater project.  
 
-below is the file structure:
+More to be done here to be a working EPG system. Welcome for any assistance here.
+
+Each of the ratings systems uses a country identifier (au) here for the rating graghics files.
+
+Below is the file structure:
 ```
 epg
 |   build-and-run.sh
