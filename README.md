@@ -4,7 +4,7 @@ EPG system written in Go using SQLite and REST backend.
 This is not a completed project and partically implemented with the required events table to be laoded and queried.
 
 below is the file structure:
-
+"""
 epg
 |   build-and-run.sh
 |   go.mod
@@ -103,7 +103,7 @@ epg
     \---js
             scripts.js
 
-
+"""
 
 
 The project requires a number of Go packages
