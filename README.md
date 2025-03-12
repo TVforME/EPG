@@ -5,13 +5,13 @@ This is NOT a complete turnkey project simply a roll-you-own concept to use with
 
  # 🧠 My Goal
 
-1. Understnad the underly mechanisum in implementing A EPG and injecting the EIT into a running DVB transport stream 🛰️
-2. Use a SQLite database backend in Go
-3. implement a web backend to show current events and basic management of the EPG and Repeaters operation remotely. Use TSL and proper security.
+**1.** Understnad the underly mechanisum in implementing A EPG and injecting the EIT into a running DVB transport stream 🛰️
+**2.** Use a SQLite database backend in Go
+**3.** implement a web backend to show current events and basic management of the EPG and Repeaters operation remotely. Use TSL and proper security.
 
 I've since looked into CherryEPG as a subsitute EPG system however, I'll continual working on this GO version and support anyone whom has experience with EPG's and is able to assist with this project.
 
-**DB**
+## 🛢 Database
 
 To create a new epg, simply delete the epg.db file in bin folder. On execution a new epg.db file is created using GORM migrate which uses the csv files to populate the tables.
 I used this method over static constants to keep the executable smaller in size and to provide flexibility for additions and changes. Some thought on how to package the csv files with the GO install.
