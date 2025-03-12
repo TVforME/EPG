@@ -1,10 +1,13 @@
 # 📺 EPG
 ***EPG*** (Electronic Program Guide) system written in Go using SQLite and web backend.
-This is NOT a complete turnkey project as yet. Its a roll-you-own concept to use with my repeater project. [DATV Repeater](https://github.com/TVforME/Repeater)
 
-1. Understnad the underly mechanisums to implement EPG and inject EIT into a DVB transport stream 🛰️
-2. Play with SQLite backend using Go
-3. implement a web backend to show current events and basic management.
+This is NOT a complete turnkey project simply a roll-you-own concept to use with my repeater project. [DATV Repeater](https://github.com/TVforME/Repeater)
+
+ # 🧠 My Goal
+
+1. Understnad the underly mechanisum in implementing A EPG and injecting the EIT into a running DVB transport stream 🛰️
+2. Use a SQLite database backend in Go
+3. implement a web backend to show current events and basic management of the EPG and Repeaters operation remotely. Use TSL and proper security.
 
 I've since looked into CherryEPG as a subsitute EPG system however, I'll continual working on this GO version and support anyone whom has experience with EPG's and is able to assist with this project.
 
@@ -30,6 +33,7 @@ I'm yet to work out how modern TV's show the channel icon and current program in
 - [ ] Show the current events for channels using SSE (dynamic webpage) as one would see on the TV or set top box.
 - [ ] Once events have been created, generate the EIT.xml file containing the relavent tags which is injected into the DVB transport stream using TSduck eitinject plugin or alternatively roll my own using pure GO
 [https://github.com/tsduck/tsduck/tree/master/src/tsplugins](https://github.com/tsduck/tsduck/blob/master/src/tsplugins/tsplugin_eitinject.cpp)
+- [ ] Add users table and TSL secure socket handling to remote manage.
 
 
 Below is the file structure:
