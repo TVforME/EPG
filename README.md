@@ -1,5 +1,5 @@
 # 📺 EPG
-***EPG*** (Electronic Program Guide) system written in Go using SQLite and REST backend.
+***EPG*** (Electronic Program Guide) system written in Go using SQLite and web backend.
 This is NOT a complete turnkey project as yet. Its a roll-you-own concept to use with my repeater project. [DATV Repeater](https://github.com/TVforME/Repeater)
 
 1. Understnad the underly mechanisums to implement EPG and inject EIT into a DVB transport stream 🛰️
