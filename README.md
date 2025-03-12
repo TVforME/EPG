@@ -25,7 +25,8 @@ Each of the ratings systems uses a country identifier (au) here for the rating i
 
 [CRID](https://en.wikipedia.org/wiki/Content_reference_identifier) (content reference identifier) 
 
-I'm yet to work out how modern TV's show the channel icon and current program in their EPG? I'm sure it able to be immplemented.
+I'm yet to work out how modern TV's show the channel icon and current program in their EPG? I'm sure it able to be immplemented and is a url to a specific address where these resources are visible.
+Anyone like to explain how this actully works and what is needed at the CRID/URL side? 😜
 
 # 📝 TODO
 
