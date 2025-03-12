@@ -1,6 +1,10 @@
-# EPG
+# 📺 EPG
 ***EPG*** (Electronic Program Guide) system written in Go using SQLite and REST backend.
-This is NOT a complete turnkey project and is a prototype concept to use with my repeater project. [DATV Repeater](https://github.com/TVforME/Repeater)
+This is NOT a complete turnkey project as yet. Its a roll-you-own concept to use with my repeater project. [DATV Repeater](https://github.com/TVforME/Repeater)
+
+1. Understnad the underly mechanisums to implement EPG and inject EIT into a DVB transport stream 🛰️
+2. Play with SQLite backend using Go
+3. implement a web backend to show current events and basic management.
 
 I've since looked into CherryEPG as a subsitute EPG system however, I'll continual working on this GO version and support anyone whom has experience with EPG's and is able to assist with this project.
 
@@ -20,10 +24,11 @@ Each of the ratings systems uses a country identifier (au) here for the rating i
 
 I'm yet to work out how modern TV's show the channel icon and current program in their EPG? I'm sure it able to be immplemented.
 
-**TODO**
+# 📝 TODO
 
-Implement a query to fill the events table with a full 24 hours of events which is populated once a channel/s is associated to a network. If there is 2 channels to example then need to create 24 hours of events for each channel.
-Once events have been created then a query is run to generate a EIT.xml file containing the relavent tags which is injected into the DVB transport stream using TSduck eitinject plugin.
+- [ ] Implement a query to fill the events table with a full 24 hours of events which is populated once a channel/s is associated to a network.
+- [ ] Show the current events for channels using SSE (dynamic webpage) as one would see on the TV or set top box.
+- [ ] Once events have been created, generate the EIT.xml file containing the relavent tags which is injected into the DVB transport stream using TSduck eitinject plugin or alternatively roll my own using pure GO
 [https://github.com/tsduck/tsduck/tree/master/src/tsplugins](https://github.com/tsduck/tsduck/blob/master/src/tsplugins/tsplugin_eitinject.cpp)
 
 
