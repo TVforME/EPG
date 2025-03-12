@@ -17,11 +17,11 @@ To create a new epg, simply delete the epg.db file in bin folder. On execution a
 I used this method over static constants to keep the executable smaller in size and to provide flexibility for additions and changes. Some thought on how to package the csv files with the GO install.
 I'm yet to decide.
 
-**Ratings**
+## 🌟 Ratings
 
 Each of the ratings systems uses a country identifier (au) here for the rating icon files.
 
-**CRID**
+## 🌐 CRID
 
 [CRID](https://en.wikipedia.org/wiki/Content_reference_identifier) (content reference identifier) 
 
